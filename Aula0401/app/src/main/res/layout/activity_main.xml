@@ -57,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="89dp"
                 android:id="@+id/listaPares"
-                android:layout_weight="1" />
+                android:layout_weight="0.01" />
 
         </LinearLayout>
 
@@ -80,6 +80,21 @@
                 android:layout_height="106dp"
                 android:id="@+id/listaImpares"
                 android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Contar"
+                android:id="@+id/button"
+                android:singleLine="true"
+                android:onClick="abreResultado" />
         </LinearLayout>
     </LinearLayout>
 

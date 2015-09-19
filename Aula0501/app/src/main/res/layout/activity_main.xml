@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="119dp"
+            android:weightSum="1"
+            android:layout_below="@+id/linearLayout">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_propriedade"
+                android:singleLine="true"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#100fff" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edit_propriedade"
+                android:layout_below="@+id/text_propriedade"
+                android:layout_alignParentLeft="true"
+                android:textSize="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gravar Propriedade"
+                    android:id="@+id/gravarPropriedade"
+                    android:layout_weight="1"
+                    android:onClick="gravarPropriedade" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ler Propriedade"
+                    android:id="@+id/lerPropriedade"
+                    android:layout_weight="1"
+                    android:onClick="lerPropriedade" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gravar Arq. Int."
+                    android:id="@+id/gravarArquivoInterno"
+                    android:layout_weight="1"
+                    android:onClick="gravarArquivoInterno" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ler Arq. Int."
+                    android:id="@+id/lerArquivoInterno"
+                    android:layout_weight="1"
+                    android:onClick="lerArquivoInterno" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Gravar Arq. Ext."
+                    android:id="@+id/gravarArquivoExterno"
+                    android:layout_weight="1"
+                    android:onClick="gravarArquivoExterno" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ler Arq. Ext."
+                    android:id="@+id/lerArquivoExterno"
+                    android:layout_weight="1"
+                    android:onClick="lerArquivoExterno" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

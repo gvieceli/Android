@@ -1,5 +1,5 @@
-# Android
-<<<<<<< HEAD
+# Target Trust
+
 Curso de Android
 =======
->>>>>>> origin/master
+Exercícios das aulas do curso de Android da TargetTrust
